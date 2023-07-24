@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const sql = require("mssql");
-const PORT = process.env.PORT || 8080;
 let jwt = require("jsonwebtoken");
 
 require("dotenv").config();
@@ -156,6 +155,6 @@ app.delete("/api/:id", (req, res) => {
   });
 });
 
-app.listen(8080, () => {
-  console.log(`listening on port ${PORT}`);
+app.listen(3000, () => {
+  console.log(`listening on port 3000`);
 });
